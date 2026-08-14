@@ -332,9 +332,9 @@ async function stopCurrentActivity() {
 
 
     startedAt = null;
-    currentEventOd = null;
+    currentEventId = null;
 
-    stopBuutton.disabled = true;
+    stopButton.disabled = true;
 
     currentActivity.textContent =
         "Sin actividad";
