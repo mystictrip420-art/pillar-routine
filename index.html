@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PILLAR — Routine</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <div id="login-screen" class="login-screen">
+
+            <div class="login-card">
+
+                <div class="header">
+                    <h1>PILLAR</h1>
+                    <p>Routine Tracker</p>
+                </div>
+
+                <form id="login-form">
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Contraseña"
+                        required
+                    >
+
+                    <button type="submit">
+                        ENTRAR
+                    </button>
+
+                    <p id="login-error"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+        <header class="header">
+            <h1>PILLAR</h1>
+            <p>Routine Tracker</p>
+        </header>
+
+        <div id="routine-screen">
+        <section class="current">
+
+            <p class="section-label">AHORA</p>
+
+            <div class="current-icon" id="current-icon">
+                🎵
+            </div>
+
+            <h2 id="current-activity">
+                Música
+            </h2>
+
+            <p class="timer" id="timer">
+                00:00:00
+            </p>
+
+        </section>
+
+
+        <section class="activities">
+
+            <p class="section-label">
+                ¿Qué estás haciendo?
+            </p>
+
+
+            <div class="activity-grid">
+
+                <button
+                    class="activity-button"
+                    data-activity="work"
+                >
+                    <span>🏗️</span>
+                    Trabajo
+                </button>
+
+
+                <button
+                    class="activity-button"
+                    data-activity="programming"
+                >
+                    <span>💻</span>
+                    Código
+                </button>
+
+
+                <button
+                    class="activity-button"
+                    data-activity="music"
+                >
+                    <span>🎵</span>
+                    Música
+                </button>
+
+
+                <button
+                    class="activity-button"
+                    data-activity="bible"
+                >
+                    <span>📖</span>
+                    Biblia
+                </button>
+
+
+                <button
+                    class="activity-button"
+                    data-activity="church"
+                >
+                    <span>🙏</span>
+                    Iglesia
+                </button>
+
+
+                <button
+                    class="activity-button"
+                    data-activity="food"
+                >
+                    <span>🍽️</span>
+                    Comida
+                </button>
+
+
+                <button
+                    class="activity-button"
+                    data-activity="rest"
+                >
+                    <span>😴</span>
+                    Descanso
+                </button>
+
+
+
+                <button
+                    class="activity-button"
+                    data-activity="personal"
+                >
+                    <span>🏠</span>
+                    Personal
+                </button>
+
+            </div>
+
+
+        <div class="stop-container">
+            <button
+                id="stop-activity"
+                class="stop-Button"
+                type="button"
+                disabled
+            >
+                ⏹ Parar actividad
+            </button>
+        </div>
+
+
+            <button class="other-button">
+                + Otra actividad
+            </button>
+
+        </section>
+
+
+        <section class="timeline">
+
+            <p class="section-label">
+                HOY
+            </p>
+
+
+            <div id="timeline">
+
+                <div class="timeline-item">
+                    <span class="time">
+                        07:14
+                    </span>
+
+                    <span>
+                        🏗️ Trabajo
+                    </span>
+                </div>
+
+
+                <div class="timeline-item">
+                    <span class="time">
+                        07:15
+                    </span>
+
+                    <span>
+                        🎵 Música
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
